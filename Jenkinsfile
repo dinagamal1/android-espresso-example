@@ -14,6 +14,8 @@ pipeline {
       
   //      sh 'gradle test'
                                   sh 'sudo chown dina:dina /dev/kvm'
+                  
+                  sh'adb devices'
 
 
     } 

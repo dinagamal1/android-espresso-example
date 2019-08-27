@@ -35,9 +35,5 @@ public class MainActivityInstrumentalTesting {
         onView(withId(R.id.username))
                 .perform(typeText("Hello Pamela"));
     }
-       @Test
-    public void reTypeText(){
-        onView(withId(R.id.username))
-                .perform(typeText("Good Bye ;)"));
-    }
+
 }

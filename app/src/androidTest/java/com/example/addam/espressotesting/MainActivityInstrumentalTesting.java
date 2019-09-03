@@ -27,13 +27,13 @@ public class MainActivityInstrumentalTesting {
     @Test
     public void ensureTextExist(){
         onView(withId(R.id.username))
-                .perform(typeText("Hello Amir"));
+                .perform(typeText("Hello Ahmed"));
     }
 
     @Test
     public void reTypeText(){
         onView(withId(R.id.username))
-                .perform(typeText("Hello Pamela"));
+                .perform(typeText("Hello Aya"));
     }
 
 }

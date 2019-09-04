@@ -6,14 +6,14 @@ pipeline {
         stage('Build') {
             steps {
    //             sh 'gradle build'
-                sh 'sudo chown dina:dina /dev/kvm'
+          //      sh 'sudo chown dina:dina /dev/kvm'
             }
         }
         stage('Test') {
               steps {
       
   //      sh 'gradle test'
-                                  sh 'sudo chown dina:dina /dev/kvm'
+                           //       sh 'sudo chown dina:dina /dev/kvm'
                   
                   sh'adb devices'
 

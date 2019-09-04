@@ -7,6 +7,7 @@ pipeline {
             steps {
    //             sh 'gradle build'
           //      sh 'sudo chown dina:dina /dev/kvm'
+                sh 'cd ~'
             }
         }
         stage('Test') {

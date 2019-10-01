@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
               steps {
-         sh 'gradle test'
+       //  sh 'gradle test'
                             sh 'sudo chown dina:dina /dev/kvm'
                   
                   sh'adb devices'

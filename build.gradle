@@ -23,3 +23,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+android {
+   buildToolsVersion "23.0.2"
+   // ...
+
+}

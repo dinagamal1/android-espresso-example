@@ -23,3 +23,12 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
+
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
+    options: 'connectedAndroidTest --info'
+    tasks: 'test'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'

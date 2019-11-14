@@ -16,8 +16,7 @@ steps:
   inputs:
     workingDirectory: ''
     gradleWrapperFile: './gradlew'
-    javaHomeOption: /usr/java"
-    jdkVersionOption: '1.8'
+    jdkVersionOption: 'default'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'

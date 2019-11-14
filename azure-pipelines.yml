@@ -15,7 +15,7 @@ steps:
 - task: Gradle@2
   inputs:
     workingDirectory: ''
-    gradleWrapperFile: './gradlew'
+    gradleWrapperFile: 'gradle'
     jdkVersionOption: 'default'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true

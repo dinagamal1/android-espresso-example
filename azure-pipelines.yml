@@ -12,16 +12,15 @@ pool:
   - Agent.OS -equals Linux
 
 steps:
-- task: Gradle@2
+- task: Bash@3
   inputs:
-    workingDirectory: ''
-    gradleWrapperFile: './gradlew'
-    jdkVersionOption: 'default'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    tasks: 'build'
-
+    targetType: 'inline'
+    script: 
+      gradle build
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'chmod a+x ./gradlew'
 - task: Gradle@2
   inputs:
     gradleWrapperFile: './gradlew'
@@ -29,4 +28,3 @@ steps:
     tasks: 'test'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    javaHomeOption: 'JAVA_HOME'

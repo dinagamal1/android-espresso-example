@@ -15,9 +15,8 @@ steps:
 - task: Gradle@2
   inputs:
     workingDirectory: ''
-    gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m'
-    javaHomeOption: 'JAVA_HOME'
+    gradleWrapperFile: './gradlew'
+    javaHomeOption: /usr/java"
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
@@ -26,7 +25,7 @@ steps:
 
 - task: Gradle@2
   inputs:
-    gradleWrapperFile: 'gradlew'
+    gradleWrapperFile: './gradlew'
     options: 'connectedAndroidTest --info'
     tasks: 'test'
     publishJUnitResults: true

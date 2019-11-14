@@ -8,8 +8,6 @@ trigger:
 
 pool:
   name: 'dina'
-  demands:
-  - Agent.OS -equals Linux
 
 steps:
 - task: Bash@3
